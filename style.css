@@ -1,0 +1,501 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{
+	font-size: 10px;
+	font-family: "Gotham", sans-serif;
+}
+
+body{
+	overflow-x: hidden;
+}
+
+
+.links{
+	text-decoration: none;
+	color: #000;
+}
+
+#header-title h1{
+	font-size: 60px;
+	margin: 20px 0 20px;
+}
+#header-title h3{
+	color: #a8a8a8;
+	font-size: 40px;
+	margin: 20px 0 20px;
+}
+#header-title h4{
+	font-size: 30px;
+	margin: 20px 0 20px;
+}
+
+.text-color{
+	color: #fff;
+}
+.container-fluid{
+	max-width: 120rem;
+	width: 90%;
+	margin: 0 auto;
+}
+
+header{
+	width: 100%;
+	height: 100vh;
+	background-image: url(./images/pexels-forest.jpeg);
+	background-size: cover;
+	background-color: #c5c5c5;
+}
+
+#header-title{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	margin-left: 10%;
+	justify-content: center;
+
+}
+.header-photo{
+	border-radius: 158px;
+	opacity: 0.3;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	margin-left: 65%;
+	height: 350px;
+	width: 350px;
+	object-fit: cover;
+	justify-content: center;
+
+}
+.header-photo:hover{
+	height: 450px;
+	width: 450px;
+	object-fit: cover;
+	margin-left: 61.5%;
+	opacity: 0.8;
+}
+
+.photo-button{
+	border-radius: 158px;
+	background: #e0e0e0;
+	box-shadow: 6px 6px 12px #c5c5c5,
+             -6px -6px 12px #ffffff;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	margin-left: 65%;
+	justify-content: center;
+	height: 350px;
+	width: 350px;
+	border-color: transparent;
+}
+
+#down-arrow{
+	position: absolute;
+	top: 85%;
+	left: 50%;
+	animation: sdb05 1.5s infinite;
+}
+
+
+
+/* VER WEB:  https://brittanychiang.com/;
+#skills{
+	display: flex;
+}*/
+
+.section:nth-child(even){
+	width: 100%;
+	padding: 3% 0px 5% 0px;
+	background-color: #191919;
+}
+.section:nth-child(odd){
+	width: 100%;
+	padding: 3% 0px 5% 0px;
+	background-color: #101010;
+}
+.main{
+	width: 1130px;
+	max-width: 95%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+.section-img{
+	height: auto;
+	width: 330px;
+}
+
+.section-text h5{
+	color: white;
+	font-size: 22px;
+	margin-bottom: 25px;
+	text-transform: capitalize;
+}
+.section-text p{
+	color: #009087;
+	font-size: 18px;
+	margin-bottom: 45px;
+
+}
+.nav-button {
+	display: inline-block;
+	transition: all 0.2s ease-in;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	color: #090909;
+	padding: 0.7em 1em;
+	font-size: 18px;
+	border-radius: 0.5em;
+	background: #e8e8e8;
+	border: 1px solid #e8e8e8;
+	box-shadow: 6px 6px 12px #c5c5c5,
+	         -6px -6px 12px #ffffff;
+	text-decoration: none;
+
+}
+
+.nav-button:active {
+  color: #666;
+  box-shadow: inset 4px 4px 12px #c5c5c5,
+             inset -4px -4px 12px #ffffff;
+}
+
+.nav-button:before {
+	content: "";
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%) scaleY(1) scaleX(1.25);
+	top: 100%;
+	width: 140%;
+	height: 180%;
+	background-color: rgba(0, 0, 0, 0.05);
+	border-radius: 50%;
+	display: block;
+	transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+	z-index: -1;
+}
+
+.nav-button:after {
+	content: "";
+	position: absolute;
+	left: 55%;
+	transform: translateX(-50%) scaleY(1) scaleX(1.45);
+	top: 180%;
+	width: 160%;
+	height: 190%;
+	background-color: #009087;
+	border-radius: 50%;
+	display: block;
+	transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+	z-index: -1;
+}
+
+.nav-button:hover {
+	color: #ffffff;
+	border: 1px solid #009087;
+	cursor: pointer;
+}
+
+.nav-button:hover:before {
+	top: -35%;
+	background-color: #009087;
+	transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.nav-button:hover:after {
+	top: -45%;
+	background-color: #009087;
+	transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+
+
+
+.box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 400px;
+}
+
+.card{
+	height:  365px;
+	width: 335px;
+	padding: 30px 35px;
+	background-color: #191919;
+	border-radius: 20px;
+	margin: 15px;
+	position: relative;
+	overflow:  hidden;
+	text-align: center;
+}
+.card i{
+	font-size: 50px;
+	display: block;
+	text-align: center;
+	margin: 25px 0;
+	color: #009087;
+}
+
+h5{
+	color: white;
+	font-size: 23px;
+	margin-bottom: 15px;
+}
+
+.pra p{
+	color: #009087;
+	font-size: 16px;
+	line-height: 27px;
+	margin-bottom: 25px;
+}
+
+.button{
+	background-color: #009087;
+	color: white;
+	text-decoration: none;
+	border:  2px solid transparent;
+	font-weight: bold;
+	padding: 9px 22px;
+	border-radius: 30px;
+	transition: .4s;
+}
+
+ .button:hover{
+	background-color: transparent;
+	border:  2px solid #009087;
+	cursor: pointer;
+}
+
+
+
+
+.top-bar{
+	padding-top: 2%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-transform: uppercase;
+	font-size: 1.6rem;
+	margin-right: 2%;
+	margin-left: 2%;
+}
+.brand a{
+	font-size: 3 rem;
+	font-weight: 300;
+	transform: translateX(-100rem);
+	animation: slideIn .5s forwards;
+	text-decoration: none;
+	color: #009087;
+}
+
+
+nav ul{
+	display: flex;
+	align-items: center;
+}
+nav ul li{
+	list-style: none;
+	transform: translateX(100rem);
+	animation: slideIn .5s forwards;
+}
+nav ul li a{
+	padding: 1 rem 0;
+	margin: 1rem;
+	position: relative;
+	letter-spacing: 2px;
+}
+.nav-button{
+	transform: translateX(100rem);
+	animation: slideIn .5s forwards;
+}
+
+@keyframes slideIn{
+	from{
+	}
+	to{
+		transform: translateX(0);
+	}
+}
+
+nav ul ::before, nav ul::after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	left: 0;
+	transform: scaleX(0);
+	transition: all .5s;
+}
+nav ul :before{
+	top: 0;
+	transform-origin: left;
+}
+nav ul :after{
+	bottom:0;
+	transform-origin: right;
+}
+nav ul :hover::before, nav ul:hover::after{
+	transform: scaleX(1);
+}
+
+
+
+
+.cool-link{
+	background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+.cool-link:hover, .cool-link:focus {
+    background-size: 100% 2px;	
+    color: #009087;
+}
+
+
+
+section{
+	width: 100%;
+	background-color: #151515;
+	position: relative;	
+}
+section .container{
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+section img{
+	width: 100%;
+	border-radius: 20px;
+}
+
+/*.shadow{
+	position: absolute;
+	bottom: 100%;
+	height: 150px;
+	width: 100%;
+	left: 0;
+	z-index: 20;
+	background: linear-gradient(to top, #151515, transparent);
+}*/
+
+.container{
+	max-width: 70rem;
+    padding: 0 2rem;
+    margin: 0 auto;
+}
+
+
+.content{
+	color: #fff;
+	border-radius: 20px;
+}
+
+.imgContainer{
+    transform: translateY(40px);
+}	
+
+.title > about{
+	text-align: left;
+}
+.title{
+	color: white;
+	font-family: gotham;
+	font-weight: lighter;
+    font-size: 70px;
+    margin-bottom: 1rem;
+    padding-bottom: 20px;
+	max-width: 0 auto;
+    position: relative;
+    text-align: center;
+    margin-right: 50px;
+}
+
+.title1{
+	color: #009087;
+}
+.paragraph{
+	padding: 0 5% 0 5%;
+	text-align: center;
+	font-size: 14px;
+	font-family: gotham;
+	font-weight: lighter;
+
+}
+
+
+.social{
+	display: flex;
+	justify-content: center;
+	
+}
+.social a{
+	height: 50px;
+	width: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #009087;
+	text-decoration: none;
+	font-size: 40px;
+	margin: 3% 4% 2% 4%;
+}
+.social a:hover{
+	transform: scale(1.3);
+	transition: .3s;
+}
+
+
+footer{
+	width: 100%;
+	background-color: #c5c5c5;
+	position: relative;
+	height: 150px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+}
+footer p{
+	color: white;
+}
+
+.down-arrow{
+	position: absolute;
+	bottom: 10%;
+	left: 50%;
+}
+.bounce {
+	animation: bounce 3s infinite;
+}
+
+@keyframes bounce {
+    0%, 12.5%, 37.5%, 62.5%, 87.5%, 100% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-30px);
+      }
+    50% {
+        transform: translateY(-20px);
+      }
+    75% {
+        transform: translateY(-10px);
+    }
+
+}
+
+
